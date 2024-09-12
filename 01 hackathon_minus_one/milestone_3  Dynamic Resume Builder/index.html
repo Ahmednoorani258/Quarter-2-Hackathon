@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mainheading">Dynamic Resume Builder</h1>
+
+      <div class="wrapper">
+        <!-- Resume Form -->
+        <section class="sec1">
+          <form id="resume-form">
+            <h2>Resume Form</h2>
+
+            <fieldset class="pesonal-info">
+              <legend>Personal Information</legend>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone"
+                required
+              />
+
+              <label for="address">Address:</label>
+              <input
+                type="text"
+                id="address"
+                placeholder="Enter your address"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="summary">
+              <legend>About me</legend>
+              <label for="summary">About me:</label>
+              <textarea name="summary" id="summary"  cols="3" rows="4"  required></textarea
+              >
+            </fieldset>
+
+            <fieldset class="image">
+              <legend>Image</legend>
+              <label for="image">Image:</label>
+              <input type="file" id="image" accept="image/*"/>
+            </fieldset>
+            <fieldset class="skills">
+              <legend>Skills</legend>
+              <label for="skill1">Skills:</label>
+              <textarea name="skills" id="skills"  cols="3" rows="4"  required></textarea
+              >
+            </fieldset>
+
+            <!-- <fieldset class="social-media">
+                <legend>Social Media</legend>
+                <label for="facebook">Facebook:</label>
+                <input type="url" id="facebook" placeholder="Enter your facebook url"  />
+            </fieldset> -->
+            <fieldset class="education">
+              <legend>Education</legend>
+              <label for="education">Education:</label>
+              <input
+                type="text"
+                id="degreename"
+                placeholder="Enter your degree"
+                required
+              />
+
+              <label for="institute">Institute:</label>
+              <input
+                type="text"
+                id="institute"
+                placeholder="Enter your institute"
+                required
+              />
+
+              <label for="year">Year:</label>
+              <input
+                type="date"
+                id="year"
+                placeholder="Enter your year"
+                required
+              />
+            </fieldset>
+            <fieldset class="professional-experience">
+              <legend>Professional Experience</legend>
+
+              <label for="company">Company:</label>
+              <input
+                type="text"
+                id="company"
+                placeholder="Enter your company"
+                required
+              />
+
+              <label for="designation">Designation:</label>
+              <input
+                type="text"
+                id="designation"
+                placeholder="Enter your designation"
+                required
+              />
+
+              <label for="experience">Experience:</label>
+              <input
+                type="text"
+                id="experience"
+                placeholder="Enter your experience"
+                required
+              />
+            </fieldset>
+            <fieldset class="languages">
+              <legend>Languages</legend>
+
+              <label for="languages">Languages:</label>
+              <textarea name="languages" id="languages"></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+          </form>
+        </section>
+
+        <!-- Resume Preview -->
+        <section class="sec2">
+          <h2>Resume Preview</h2>
+          <div id="resume-preview">
+            <!-- This will be dynamically populated -->
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
