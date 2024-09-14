@@ -145,10 +145,21 @@
           <div id="resume-preview">
             <!-- This will be dynamically populated -->
           </div>
+          <div>
+            <label for="share-link">Shareable Link:</label>
+            <input type="text" id="share-link" readonly />
+            <div>
+              <button id="copy-link">Copy Link</button>
+              <button id="download-pdf">Download PDF</button>
+            </div>
+          </div>
+
+           
+          
         </section>
       </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js" integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
   </body>
 </html>
