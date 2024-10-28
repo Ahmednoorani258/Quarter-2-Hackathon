@@ -1,211 +1,120 @@
-/* Base Styling */
-body {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-  }
+:root{
+  --primary-color: #135079;
+  --secondary-color: #e9eeea;
+}
 
-  .welcomepage {
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    position: fixed;
-    background-color: #e9e9e9;
-    display: block;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .welcomepage h1{
-    font-size: 40px;
-    font-weight: bolder;
-  }
-  .welcomepage h2{
-    font-size: 20px;
-    font-weight: bolder;
-  }
+body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
 
-  .welcomepage button{
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    box-shadow: #555 3px 3px 10px;
-    background-color: #fff;   
-  }
-  .welcomepage button:hover{
+.resumediv{
+  width: 60%;
 
-    transition: 0.5s;
-    box-shadow: inset #555 3px 3px 10px;
-  }
-  
+  border: 1px solid black;
+}
 
-  .resume {
-    width: 80%;
-    margin: 0 auto;
-    border: 2px solid #000;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-  }
+header {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  padding: 30px;
+  padding-bottom: ;
   
-  /* Header Styling */
-  h1 {
-    text-align: center;
-    font-size: 26px;
-    text-transform: uppercase;
-    font-weight:bolder;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-  }
-  
-  /* Personal Info Section */
-  .personalinfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .info-sec {
-    max-width: 60%;
-  }
-  
-  .info-sec p {
-    margin: 5px 0;
-  }
-  
-  .profileimage img {
-    border: 2px solid #000;
-    border-radius: 50%;
-    max-width: 200px;
-    height: auto;
-  }
-  
-  /* Section Titles */
-  section h1, section h2 {
-    background-color: #e0e0e0;
-    padding: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 0;
-    letter-spacing: 0.5px;
-  }
-  
-  /* List Items */
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  ul li {
-    padding: 5px 0;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  .objective, .education, .skills, .work-experience {
-    margin-bottom: 20px;
-  }
+}
+.color{
+  color: white;
+}
 
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
-  }
-   
+.colorpri{
+  background-color: var(--primary-color);
+}
 
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+
+.content{
+  width: 100%;
+  display: flex;
   
-  /* Responsive Media Queries */
   
-  /* Tablet (768px and below) */
-  @media screen and (max-width: 768px) {
-    .resume {
-      width: 90%;
-    }
-  
-    .personalinfo {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .info-sec {
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .profileimage img {
-      width: 150px;
-      height: 150px;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-  
-    section h1, section h2 {
-      font-size: 16px;
-    }
-  
-    h3 {
-      font-size: 14px;
-    }
-  }
-  
-  /* Mobile (480px and below) */
-  @media screen and (max-width: 480px) {
-    body {
-      margin: 10px;
-    }
-  
-    .resume {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .personalinfo {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .info-sec {
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .profileimage img {
-      width: 120px;
-      height: 120px;
-    }
-  
-    h1 {
-      font-size: 22px;
-    }
-  
-    section h1, section h2 {
-      font-size: 15px;
-    }
-  
-    h3 {
-      font-size: 13px;
-    }
-  
-    ul li {
-      padding: 3px 0;
-    }
-  
-    button {
-      width: 120px;
-      padding: 8px;
-    }
-  }
-  
+}
+
+.content aside {
+  background-color: var(--secondary-color);
+  width: 30%;
+  padding: 10px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+
+.content main {
+  width: 70%;
+}
+
+.contact,
+.skill,
+.education,
+.language {
+  margin-bottom: 30px;
+}
+
+.education,
+.language{
+  line-height: 22px;
+}
+
+
+.contact h2,
+.education h2,
+.skill h2,
+.language h2,
+.experience h2,
+.reference h2 {
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.skill ul{
+  margin-left: 14px;
+}
+
+.maincontent{
+  width: 70%;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.experienceitems{
+  margin-bottom: 55px;
+}
+
+.experienceitems p {
+  margin-bottom: 5px;
+
+}
+
+.experienceitems ul{
+  margin-left: 18px ;
+  margin-top: 16px;
+}
+
