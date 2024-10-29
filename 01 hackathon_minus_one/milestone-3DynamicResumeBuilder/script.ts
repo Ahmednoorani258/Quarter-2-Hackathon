@@ -36,5 +36,7 @@ form?.addEventListener('submit',(e) => {
     localStorage.setItem("companylocation",companylocation.value)
     localStorage.setItem("jobtitle",jobtitle.value)
     localStorage.setItem("responsibilities",responsibilities.value)
+
+    window.location.href = ""
 })
 
