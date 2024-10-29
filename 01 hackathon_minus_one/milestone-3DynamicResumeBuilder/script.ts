@@ -18,6 +18,8 @@ let responsibilities:any = document.getElementById('responsibilities')
 let submitbtn :any= document.getElementById('submitbtn')
 let form:any = document.getElementById('form')
 
+console.log(myName,designation,phone,email,address,passingyear,degree,institution,skills,language,startyear,endyear,company,companylocation,jobtitle,responsibilities,submitbtn,form)
+
 form?.addEventListener('submit',(e) => {
     e.preventDefault()
     localStorage.setItem("myname",myName.value)
@@ -37,6 +39,10 @@ form?.addEventListener('submit',(e) => {
     localStorage.setItem("jobtitle",jobtitle.value)
     localStorage.setItem("responsibilities",responsibilities.value)
 
+<<<<<<< HEAD
     window.location.href = ""
+=======
+    window.location.href
+>>>>>>> 72386aa800119018cc47a7ae9b9235dd96837498
 })
 

@@ -3,104 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Static Resume</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
-    <!-- Welcome page -->
-
-    <div class="welcomepage">
-        <h1>Welcome To First & Second Milesone</h1>
-        <button class="btn">View Resume</button>
-        <h2>Made by Muhammad Ahmed Noorani</h2>
-    
-    </div>
-
-
-
-    <!-- Cv Goes from here -->
-    <div class="resume">
-      <h1><u>CURRICULUM VITAE</u></h1>
-
-      <!-- personal info section here -->
-
-      <section class="personalinfo">
-        <div class="info-sec">
-          <h1><b>Muhammad Ahmed</b></h1>
-          <p><b>Contact:</b> 0335-3791610</p>
-          <p><b>Email:</b> ahmednoorani258@gmail.com</p>
-          <p><b>Address:</b> P.I.B Colony, Karachi</p>
+    <div class="resumediv">
+      <header class="colorpri">
+        <div class="color ">
+          <h1 >Muhammad Ahmed Noorani</h1>
+          <p>FrontEnd Developer</p>
         </div>
-        <div class="profileimage">
-          <img
-            src="./profilepic.jpeg"
-            alt="profilepic"
-            width="200px"
-            height="200px"
-          />
-        </div>
-      </section>
-      <hr />
-      <!-- Objective section here -->
+        <img src="./profilepic.jpeg" alt="profilepic" />
+      </header>
+      <div class="content">
+        <aside>
+          <section class="contact">
+            <h2>Contact</h2>
+            <p><strong>Phone</strong></p>
+            <p>+92 312 1234567</p>
+            <br />
+            <p><strong>Email</strong></p>
+            <p>Nn7hI@example.com</p>
+            <br />
+            <p><strong>Address</strong></p>
+            <p>123,karachi</p>
+          </section>
+          <section class="education">
+            <h2>Education</h2>
+            <p>2024</p>
+            <p><strong>Commerce</strong></p>
+            <p>Board of Intermediate Education</p>
+            <br />
+            <p>2022</p>
+            <p><strong>Abc </strong></p>
+            <p>Board of matric Education</p>
+          </section>
+          <section class="skill">
+            <h2>Expertise</h2>
+            <ul>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Typescript/Javascript</li>
+              <li>Nextjs</li>
+              <li>Node.js</li>
+              <li>Html</li>
+            </ul>
+          </section>
+          <section class="language">
+            <h2>Language</h2>
+            <p>English</p>
+            <p>Urdu</p>
+          </section>
+        </aside>
 
-      <section class="objective">
-        <h1><b>Objective</b></h1>
-        <p>
-          Aspire to work with an organization where the enviroment foster a
-          continual learning process and where can prove my hard work, which
-          will give prolific result to organization. and to expand my learnings,
-          knowledge, and skills.
-        </p>
-      </section>
-      <hr />
+        <main class="maincontent">
+          <section class="experience">
+            <h2>Experience</h2>
+            <div class="experienceitems">
+              <p>2020 - 2024</p>
+              <p><strong>Xyz Compane | Karachi</strong></p>
+              <p>developer</p>
+              <ul>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+              </ul>
+            </div>
+            <div class="experienceitems">
+              <p>2020 - 2024</p>
+              <p><strong>Xyz Compane | Karachi</strong></p>
+              <p>developer</p>
+              <ul>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+              </ul>
+            </div>
+            <div class="experienceitems">
+              <p>2020 - 2024</p>
+              <p><strong>Xyz Compane | Karachi</strong></p>
+              <p>developer</p>
+              <ul>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+                <li>Developed new feauters</li>
+              </ul>
+            </div>
+          </section>
 
-      <!-- Qualification section here -->
-
-      <section class="education">
-        <h1><b>Education Qualification</b></h1>
-        <ul>
-          <li>
-            <b>Intermediate</b> in Commerce - Board of Intermediate Education Karachi
-          </li>
-          <li><b>Matriculation</b> - Board Of Sindh Education Karachi</li>
-        </ul>
-      </section>
-      <hr>
-
-      <!-- Skills Section -->
-
-      <section class="skills-section" style="display: block;" >
-        <h1>Skills</h1>
-        <ul class="skills-list"  >
-          <li>Nextjs</li>
-          <li>Tailwindcss</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>HTML/CSS</li>
-        </ul>
-      </section>
-      <button class="toggleskill">Hide Skill</button>
-      <hr>
-
-      <!-- Work Experience Section -->
-
-      <section id="work-experience">
-        <h1>Work Experience</h1>
-        <h3>Frontend Developer - ABC Company</h3>
-        <p>
-          Developed user interfaces using React and Tailwind CSS for web
-          applications.
-        </p>
-        <h3>Web Developer Intern - XYZ Organization</h3>
-        <p>
-          Assisted in the design and development of web pages using HTML, CSS,
-          and JavaScript.
-        </p>
-      </section>
+          <section class="reference">
+            <h2>Reference</h2>
+            <p>Availible upon request</p>
+          </section>
+          <section></section>
+        </main>
+      </div>
     </div>
-
-    <script src="index.js"></script>
   </body>
 </html>
